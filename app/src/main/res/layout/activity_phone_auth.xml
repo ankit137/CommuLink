@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbkg"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".PhoneAuthActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:text="Enter your 10 digit mobile number"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/enternumber"
+        android:padding="20dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile number"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/getotp"
+        android:layout_width="wrap_content"
+        android:text="Get otp"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <TextView
+        android:id="@+id/enterotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:text="Enter the OTP code sent to your phone"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/otpEditText"
+        android:padding="20dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="Enter OTP code"
+        android:visibility="gone"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:elevation="40dp"
+        android:text="Verify"
+        android:backgroundTint="@color/lavender"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
